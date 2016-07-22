@@ -5,7 +5,7 @@ We like the Matlab [inputParser](http://www.mathworks.com/help/matlab/ref/inputp
 
 It helps us adopt a consistent and maintainable style of parsing where:
  - Required arguments are positional and come first.
- - Non-Required arguments are name-value that can be given in any order.
+ - Non-Required arguments are name-value pairs that can be given in any order or omitted to accept defaults.
  - There is no such thing as an optional, positional argument.
  
 # Limitations
