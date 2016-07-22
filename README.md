@@ -22,7 +22,7 @@ So, we have to type the name of each variable five times!  Or, we have to let th
 This MagicInputParser will extend the stock inputParser to make it more fun to use and easier to integrate with new and existing projects.
 
 This is a work in progress.  Goals include:
- - Should not have to pass arguments to parse().  Rather, magically reach back to caller to get input variables by name by name.
+ - Should not have to pass arguments to parse().  Rather, magically reach back to caller to get input variables by name.
  - Should not have to dig out parser.Results and assign to workspace.  Should be able to assign automatically to the calling workspace or an an existing struct or object.
  - Be able to declare a named parameter that's also a Matlab preference.  Use the preference value as parameter the default, if it's available.
    - `parser.addPreference('prefGroup', 'prefName', 'defaultValue', @validator)`
