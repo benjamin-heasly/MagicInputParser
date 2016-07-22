@@ -3,13 +3,13 @@ Matlab inputParser class plus fancy magic features that reduce typing.
 
 We like the Matlab [inputParser](http://www.mathworks.com/help/matlab/ref/inputparser-class.html) class.  It makes argument processing more declarative and more convenient.
 
-It helps us adopt a consistent and maintainable style of parsing where:
+It helps us adopt a consistent and maintainable convention for parsing where:
  - Required arguments are positional and come first.
  - Non-Required arguments are name-value pairs that can be given in any order or omitted to accept defaults.
  - There is no such thing as an optional, positional argument.
  
 # Limitations
-But the stock inputParser() from Matlab falls short in some ways. For example, to get parsing results into the function workspace we have to do a lot of typing for each input we must:
+But the stock inputParser() from Matlab falls short in some ways. For example, to get parsing results into the function workspace we have to do a lot of typing.  For each input we must:
  - declare the argument in the function declaration
  - declare the argument to the input parser
  - pass the argument to the parser's parse() method
