@@ -24,7 +24,7 @@ This MagicInputParser will extend the stock inputParser to make it more fun to u
 This is a work in progress.  Goals include:
  - Should not have to pass arguments to parse().  Rather, magically reach back to caller to get input variables by name.
  - Should not have to dig out parser.Results and assign to workspace.  Should be able to assign automatically to the calling workspace or an an existing struct or object.
- - Be able to declare a named parameter that's also a Matlab preference.  Use the preference value as parameter the default, if it's available.
+ - Be able to declare a named parameter that's also a Matlab preference.  Use the getpref() value as the default, if it's available.
    - `parser.addPreference('prefGroup', 'prefName', 'defaultValue', @validator)`
  - When parsing for class methods, want to make it easy for all public properties to be parameters.  What this to be dynamic and reflective, so as to capture superclass parameters.  Property defaults can be the current values.  
    - Object property validators would be hard to declare in this way.  This is OK because objects should use set.foo in the first place.  There's no benefit to reproducing this mechanism in the parser code.
