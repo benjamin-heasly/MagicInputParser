@@ -1,7 +1,7 @@
 # MagicInputParser
 Matlab inputParser class plus fancy magic features that reduce typing.
 
-We like the Matlab [inputParser](http://www.mathworks.com/help/matlab/ref/inputparser-class.html) class.  It makes argument processing mode declarative and more convenient.
+We like the Matlab [inputParser](http://www.mathworks.com/help/matlab/ref/inputparser-class.html) class.  It makes argument processing more declarative and more convenient.
 
 It helps us adopt a consistent and maintainable style of parsing where:
  - Required arguments are positional and come first.
