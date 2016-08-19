@@ -30,3 +30,5 @@ This is a work in progress.  Goals include:
    - Object property validators would be hard to declare in this way.  This is OK because objects should use set.foo in the first place.  There's no benefit to reproducing this mechanism in the parser code.
  - Extend declarations like addRequired(), addParameter(), addPreference(), add to accept documentation strings.
  - Pretty-print human-readable documentation from declarations.
+ - Have a convenient syntax for checking that a given value belongs to a particular set.  This should work for all kinds og input, like addRequired(), addParameter(), addPreference(), etc.  Perhaps a util to generate an anonymous function.
+   - `parser.addFoo(..., isOneOf('a', 'b', 33, ...))`
