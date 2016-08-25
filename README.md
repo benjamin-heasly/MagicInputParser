@@ -112,7 +112,7 @@ The `MagicInputParser` has a convenient syntax for validating that an input valu
 
 ```
 parser = MipInputParser();
-parser.addRequired('foo', parser.isAny(77, 'cheese', {}, struct()));
+parser.addRequired('foo', parser.isAny('yes', 'no', 'true', 'false', true, false, 1, 0));
 ```
 
 # TODO
