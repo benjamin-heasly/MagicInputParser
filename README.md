@@ -9,7 +9,7 @@ It supports a consistent and maintainable convention for parsing where:
  - Non-Required arguments are name-value pairs that can be given in any order or omitted to accept defaults.
  - There is no such thing as an optional, positional argument.
  
-## inputParser Limitations
+## `inputParser` Limitations
 But the stock `inputParser()` falls short in some ways. For example, to get parsing results into the function workspace we have to do a lot of typing.  For each input we must:
  - declare the argument in the function declaration
  - declare the argument to the input parser
@@ -24,7 +24,7 @@ The `MagicInputParser` extends the stock `inputParser` class to make it more fun
 
 Here are some code examples.
 
-## Don't pass arguments to parse().
+## Don't pass arguments to `parse()`.
 Once you've declared inputs to the parser, you should not have to type their names again when calling the `parse()` method.  This is tedious and error-prone, and the parser should figure it out for you. 
 
 ```
