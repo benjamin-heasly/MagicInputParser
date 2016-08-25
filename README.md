@@ -1,6 +1,7 @@
 # MagicInputParser
 Matlab inputParser class plus fancy magic features that reduce typing.
 
+# Intro
 The Matlab [inputParser](http://www.mathworks.com/help/matlab/ref/inputparser-class.html) class is really useful.  It makes argument processing more declarative and more convenient.
 
 It supports a consistent and maintainable convention for parsing where:
@@ -8,7 +9,7 @@ It supports a consistent and maintainable convention for parsing where:
  - Non-Required arguments are name-value pairs that can be given in any order or omitted to accept defaults.
  - There is no such thing as an optional, positional argument.
  
-# inputParser Limitations
+## inputParser Limitations
 But the stock `inputParser()` falls short in some ways. For example, to get parsing results into the function workspace we have to do a lot of typing.  For each input we must:
  - declare the argument in the function declaration
  - declare the argument to the input parser
