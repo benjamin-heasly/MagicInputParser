@@ -119,6 +119,6 @@ parser.addRequired('foo', parser.isAny('yes', 'no', 'true', 'false', true, false
 The `MagicInputParser` is a work in progress.  Here are some remaining goals:
 - Extend declarations like `addRequired()`, etc. to accept documentation strings.
 - Pretty-print human-readable documentation from declarations.
-- Support sets of parameters that can be reuse throughout a project.  Some key features will be:
+- Support sets of parameters that can be reused throughout a project.  Some key features will be:
    - a way to declare/update the parameter set in one place, and use it from many places
    - a concise way to pass parsed parameter sets between functions, for example from a wrapper function to a delegate, without having to re-touch all the individual parameters.
