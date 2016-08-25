@@ -105,7 +105,7 @@ disp(quux);
 The value of `quux` would be chosen in the following order:
  - the value the caller passed to `myFunction( ... 'quux', quux)`
  - the preference value from `getpref('MipTests', 'quux')`
- - the fallback value, in this example 'fallback-if-preference-not-set'
+ - the fallback value, in this example `'fallback-if-preference-not-set'`
 
 ## Check that a value belongs to a set.
 The `MagicInputParser` has a convenient syntax for validating that an input value belongs to an arbitrary set.  It's a utility method that returns an anonymous validation function.
