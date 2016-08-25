@@ -32,3 +32,6 @@ This is a work in progress.  Goals include:
  - Pretty-print human-readable documentation from declarations.
  - Have a convenient syntax for checking that a given value belongs to a particular set.  This should work for all kinds og input, like addRequired(), addParameter(), addPreference(), etc.  Perhaps a util to generate an anonymous function.
    - `parser.addFoo(..., isOneOf('a', 'b', 33, ...))`
+ - Support common sets of parameters that we want to reuse throughout a project.  I'm not sure how to design this yet.  To key parts will be:
+   - a way to write/update the parameter set in one place, and share it from many places
+   - a concise way to pass parameters from one function to another, like from a wrapper function to the function its wrapping, without having to pass the whole varargin.
