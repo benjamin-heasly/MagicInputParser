@@ -24,7 +24,7 @@ The `MagicInputParser` extends the stock `inputParser` class to make it more fun
 
 Here are some code examples.
 
-## Don't pass arguments to parse()
+## Don't pass arguments to parse().
 Once you've declared inputs to the parser, you should not have to type their names again when calling the `parse()` method.  This is tedious and error-prone, and the parser should figure it out for you. 
 
 ```
@@ -39,7 +39,7 @@ disp(foo)
 disp(quux)
 ```
 
-## Don't dig out Results
+## Don't dig out `Results`.
 Likewise, after calling `parse()`, you should not have to rummage around in the `parser.Results` struct to get the parsed values into your workspace.  The parser should figure this out for you.
 
 The parser can assign parsed values directly to your calling workspace:
