@@ -16,7 +16,7 @@ But the stock inputParser() from Matlab falls short in some ways. For example, t
  - find the parsed value in the parser's Results field
  - assign the value to a variable in the workspace
 
-So, we have to type the name of each variable five times!  Or, we have to let the parser's Results field invade the rest of our code. That's not a nice choice.
+So, we have to type the name of each variable five times!  Or, we have to type each name three times and let the parser's Results field invade the rest of our code. That's not a nice choice.
 
 # Features
 This MagicInputParser will extends the stock inputParser to make it more fun to use and easier to integrate with new and existing projects.
