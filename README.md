@@ -76,7 +76,6 @@ methods
     function myObject = MyConstructor(varargin)
         parser = MipInputParser();
         parser.addProperties(myObject);
-        parser.parseMagically(myObject);
 
         parser.parseMagically(myObject);
         disp(myObject.foo)
