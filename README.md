@@ -20,7 +20,7 @@ But the stock `inputParser()` falls short in some ways. For example, to get pars
 So, we have to type the name of each input five times!  Or, we can type each name three times but let the parser's `Results` field invade the rest of the code. That's not a nice choice.
 
 # Features
-The `MagicInputParser` extends the stock `inputParser` class to make it more fun to use and easier to integrate with existing projects.
+The `MagicInputParser` extends the stock `inputParser` class to make it more fun to use and less invasive to existing code.
 
 Here are some code examples.
 
