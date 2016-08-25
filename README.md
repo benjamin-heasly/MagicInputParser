@@ -19,7 +19,7 @@ But the stock inputParser() from Matlab falls short in some ways. For example, t
 So, we have to type the name of each variable five times!  Or, we have to type each name three times and let the parser's Results field invade the rest of our code. That's not a nice choice.
 
 # Features
-This MagicInputParser will extends the stock inputParser to make it more fun to use and easier to integrate with new and existing projects.
+The MagicInputParser extends the stock inputParser to make it more fun to use and easier to integrate with new and existing projects.
 
 Here are some code examples.
 
@@ -112,7 +112,7 @@ parser.addRequired('foo', parser.isAny(77, 'cheese', {}, struct()));
 
 
 # TODO
-This MagicInputParser is a work in progress.  Here are some outstanding goals:
+The MagicInputParser is a work in progress.  Here are some outstanding goals:
 - Extend declarations like addRequired(), etc. to accept documentation strings.
 - Pretty-print human-readable documentation from declarations.
 - Support sets of parameters that we want to reuse throughout a project.  To key parts will be:
