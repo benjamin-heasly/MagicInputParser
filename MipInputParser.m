@@ -8,10 +8,17 @@ classdef MipInputParser < inputParser
             isInList = false;
             nItems = numel(varargin);
             for ii = 1:nItems
-                if item == varargin{ii};
+                if isequaln(item, varargin{ii})
                     isInList = true;
-                    return;
+                    break;
                 end
+            end
+            
+            if ~isInList
+                error('MipInputParser:itemIsInList', ...
+                    'The value %s should be one of: %s', ...
+                    evalc('disp(item)'), ...
+                    evalc('disp(varargin)'));
             end
         end
         
