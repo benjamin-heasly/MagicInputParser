@@ -32,6 +32,7 @@ classdef MipInputParser < inputParser
             obj.KeepUnmatched = true;
             obj.CaseSensitive = true;
             obj.PartialMatching = false;
+            obj.StructExpand = true;
         end
         
         function addProperties(obj, target)
@@ -50,6 +51,15 @@ classdef MipInputParser < inputParser
                 paramDefault = default;
             end
             obj.addParameter(name, paramDefault, validator);
+        end
+        
+        function addAllPreferences(obj, name, prefGroup, prefDefaults)
+            if ispref(prefGroup)
+                defaults = getpref(prefGroup);
+            else
+                defaults = prefDefaults;
+            end
+            obj.addParameter(name, defaults, @(val) isempty(val) || isstruct(val));
         end
         
         function target = parseMagically(obj, target)
