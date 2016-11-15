@@ -19,6 +19,16 @@ But the stock `inputParser()` falls short in some ways. For example, to get pars
 
 So, we have to type the name of each input five times!  Or, we can type each name three times but let the parser's `Results` field invade the rest of the code. That's not a nice choice.
 
+# Installation
+The best way to get MagicInputParser is to use the [ToolboxToolbox](https://github.com/ToolboxHub/ToolboxToolbox).
+
+If you have the ToolboxToolbox, then getting MagicInputParser becomes a one-liner:
+```
+tbUse('MagicInputParser');
+```
+
+Otherwise, you can manually clone this repository and add it to your Matlab path.
+
 # Features
 The `MagicInputParser` extends the stock `inputParser` class to make it more fun to use and less invasive to existing code.
 
